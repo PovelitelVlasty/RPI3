@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    margin-top: 2.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-blend-mode: multiply;
+    width: 80%;
+    height: 94.5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+}
+
+#grad {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#grad > div {
+    display: inline-block;
+    margin: 0 -2px;
+    border-radius: 0;
+    width: 20px;
+    min-width: 10px;
+}
+.tmp {
+    color: white;
+    font-weight: bold;
+    text-shadow: black 0 0 2px;
+    width: 50%;
+    display: inline-block;    
+    font-size: 15em;
+}
+#grad > div:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#grad > div:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.img {
+    width: 100px;
+    height: 100px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.nextDay {
+    display: inline-block;
+    width: 30%;
+}
+.off {
+    background-color: rgba(0, 0, 0, .4);
+    color: #aaa;
+}
+.charect{
+    display: inline-block;
+    width: 40%;
+    margin-left: 5%;
+}
+#search {
+    display: inline-block;
+    margin-left: 700px;
+}
+
+#search > input:first-child::placeholder {
+    color: #ddd;
+    font-weight: 100;
+}
+.otherday{
+    display: flex;
+    justify-content: space-around;
+}
+#search > input:first-child {
+    background-color: rgba(0, 0, 0, .4);
+    text-align: left;
+    cursor: text;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#weather {
+    width: 60%;
+    height: 86%;
+    margin: 0 -0.2%;
+    margin-top: 7%;
+}
+
+#weather > div {
+    margin: 0;
+}
+.nameDay {
+    text-align: center;
+}
+.tempDay{
+    height: 100px;
+    width: 50%;
+    color: white;
+    text-shadow: black 0 0 2px;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 80px;
+    text-align: center;
+    
+}
+.endDay {
+    display: flex;
+    justify-content: center;
+}
+.imgDay {
+    height: 100px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.city {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: black 0 0 2px;
+    padding-bottom: 18px;
+    word-spacing: 3px;
+    font-size: 1.5em;
+}
+#lat {
+    margin-top: 49%;
+    display: block;
+    position: absolute;
+    text-align: end;
+    width: 100%;
+}
+#lng {
+    display: block;
+    margin-top: 52%;
+    position: absolute;
+    text-align: end;
+    width: 100%;
+}
+#all {
+    display: flex;
+    justify-content: center;
+}
+#map {
+    width: 40%;
+    border-radius: 32px;
+    border-bottom-right-radius: 0px;
+    height: 500px;
+    margin-left: 5%;
+    position: absolute;
+}
+#mapp {
+    margin: 0 -0.15%;
+    margin-top: 7%;
+    height: 600px;
+    width: 40%;
+}
+
+#search > input:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#search > input {
+    margin-left: -2px;
+    margin-right: -2.5px;
+    color: #fff;
+    min-height: 16px;
+    border-radius: 0;
+}
+
+header {
+    height: 10%;
+
+    position: absolute;
+}
+
+option {
+    color: white;
+    background: rgba(0, 0, 0, .3);
+
+}
+
+.on {
+    background-color: rgba(255, 255, 255, .4);
+    color: #fff;
+}
+
+.day {
+    color: white;
+    font-weight: bold;
+    text-shadow: black 0 0 2px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    padding-bottom: 18px;
+    font-size: 1em;
+}
+.stde {
+    color: white;
+    font-weight: bold;
+    text-shadow: black 0 0 2px;
+    font-size: 1em;
+    margin: 8px 0;
+}
+.wb {
+    padding: 10px;
+    min-width: 40px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: black 0 0 2px;
+    margin: 0 3px;
+    min-height: 19px;
+    font-weight: bold;
+    text-shadow: black 0 0 1px;
+    outline: 0;
+    border-radius: 5px;
+    border: 0;
+}

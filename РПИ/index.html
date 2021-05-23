@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather and geolocation</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+</head>
+
+<body>
+    <header>
+        <button class="wb on" onclick="bg()">⭮</button>
+        <select id="lang" class="wb on" onchange="swichLang()">
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+        </select>
+        <div id="grad">
+            <div class="wb off" onclick="smenGrad(1)">°F</div>
+            <div class="wb on" onclick="smenGrad(0)">°C</div>
+        </div>
+        <div id="search">
+            <input type="text" class="wb">
+            <input type="button" class="wb on" onclick="setCity()">
+        </div>
+    </header>
+    <div id="all">
+    <div id="weather">
+        <div class="city"></div>
+        <div class="day"></div>
+        <div class="wea">
+            <div class="tmp"></div>
+            <div class="charect">
+                <div class="img"></div>
+                <div class="desk stde"></div>
+                <div class="like stde"></div>
+                <div class="wind stde"></div>
+                <div class="humi stde"></div>
+            </div>
+        </div>
+        <div class="otherday">
+            <div class="nextDay">
+                <div class="nameDay stde"></div>
+                <div class="endDay">
+                    <div class="tempDay"></div>
+                    <div class="imgDay"></div>
+                </div>
+            </div>
+            <div class="nextDay">
+                <div class="nameDay stde"></div>
+                <div class="endDay">
+                    <div class="tempDay"></div>
+                    <div class="imgDay"></div>
+                </div>
+            </div>
+            <div class="nextDay">
+                <div class="nameDay stde"></div>
+                <div class="endDay">
+                    <div class="tempDay"></div>
+                    <div class="imgDay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mapp"><div id="map"></div></div>
+    <div id="lat" class="stde"></div>
+    <div id="lng" class="stde"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
