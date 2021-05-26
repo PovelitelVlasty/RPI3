@@ -23,6 +23,7 @@ async function posi() {
     document.getElementsByClassName('city')[0].textContent = city.toUpperCase();
     } else {
         document.getElementsByClassName('city')[0].textContent = city.toUpperCase();
+        getCoord();
     }
     weather();
 }
@@ -48,6 +49,7 @@ async function getCoord(){
     const data = await res.json();
     lat = data.results[0].geometry.lat;
     lng = data.results[0].geometry.lng;
+    
     var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v11', 
@@ -176,8 +178,9 @@ function showTime() {
         min = today.getMinutes(),
         day = today.getDate(),
         week = today.getDay(),
-        month = today.getMonth();
-    document.getElementsByClassName('day')[0].textContent = `${nameDay[lan][week]} ${day} ${monthName[lan][month]} ${addZero(hour)}:${addZero(min)}`;
+        month = today.getMonth(),
+        sec = today.getSeconds();
+    document.getElementsByClassName('day')[0].textContent = `${nameDay[lan][week]} ${day} ${monthName[lan][month]} ${addZero(hour)}:${addZero(min)}:${addZero(sec)}`;
     document.getElementsByClassName('nameDay')[0].textContent = namesDay[lan][(week+1)%7].toUpperCase();
     document.getElementsByClassName('nameDay')[1].textContent = namesDay[lan][(week+2)%7].toUpperCase();
     document.getElementsByClassName('nameDay')[2].textContent = namesDay[lan][(week+3)%7].toUpperCase();
